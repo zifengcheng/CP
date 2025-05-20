@@ -13,7 +13,7 @@ from senllm import LlamaForCausalLM
 from colorama import Fore, Style
 import textwrap
 
-from activation_additions import get_activation_modification_hook, pre_hooks, get_blocks, get_o_proj_input
+from activation_intervention import get_activation_modification_hook, pre_hooks, get_blocks, get_o_proj_input
 
 # 设置随机种子
 # English: Set random seed to ensure the reproducibility of experimental results.

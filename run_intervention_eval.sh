@@ -2,8 +2,8 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 # # 定义模型路径数组
 models=(
-    "/root/wzh/llms/Llama-2-7b-hf"
-    # "/root/wzh/llms/Meta-Llama-3-8B"
+    "llms/Llama-2-7b-hf"
+    # "llms/Meta-Llama-3-8B"
 )
 
 run_evaluation() {

@@ -13,7 +13,7 @@ This repository provides the official code for the paper [Contrastive Prompting 
 ```
 CP/
 ├── evaluate_intervention.py      #  Main evaluation & intervention script
-├── activation_additions/         #  Hooks and utilities for intervention
+├── activation_intervention/         #  Hooks and utilities for intervention
 ├── SentEval/                     # SentEval  SentEval evaluation toolkit
 ├── senllm/                       #  Model-related code (e.g., LLaMA)
 ├── run_intervention_eval.sh      #  Batch evaluation shell script
@@ -48,14 +48,14 @@ cd -
 ```bash
 cd CP
 python evaluate_intervention.py \
-    --model_name_or_path /root/wzh/llms/Llama-2-7b-hf \
+    --model_name_or_path llms/Llama-2-7b-hf \
     --mode test \
     --task_set stsb \
     --prompt_method prompteol \
     --output_layer 27 \
     --batch_size 16 \
     --use_which_plan intervention \
-    --intervention_plan self_scaled \
+    --intervention_plan scaled \
     --intervention_location layer \
     --coeff 0.5 \
     --act_layer 4
@@ -85,7 +85,7 @@ bash run_intervention_eval.sh
 
 ##  Reference & Acknowledgement
 
-- Our code is developed upon [PromptEOL](https://github.com/kongds/scaling_sentemb). We thank the authors of PromptEOL for their great efforts.
+- Our code is developed upon [PromptEOL](https://github.com/kongds/scaling_sentemb) and [ActAdd](https://github.com/UlisseMini/activation_additions_hf). We thank the authors of both projects for their great efforts.
 
 
 
