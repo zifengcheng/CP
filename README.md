@@ -13,7 +13,7 @@ This repository provides the official code for the paper [Contrastive Prompting 
 ```
 CP/
 ├── evaluate_intervention.py      #  Main evaluation & intervention script
-├── activation_intervention/         #  Hooks and utilities for intervention
+├── activation_intervention/      #  Hooks and utilities for intervention
 ├── SentEval/                     # SentEval  SentEval evaluation toolkit
 ├── senllm/                       #  Model-related code (e.g., LLaMA)
 ├── run_intervention_eval.sh      #  Batch evaluation shell script
@@ -56,7 +56,7 @@ python evaluate_intervention.py \
     --batch_size 16 \
     --use_which_plan intervention \
     --intervention_plan scaled \
-    --intervention_location layer \
+    --intervention_location att_head \
     --coeff 0.5 \
     --act_layer 4
 ```
