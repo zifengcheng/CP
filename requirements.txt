@@ -1,0 +1,15 @@
+colorama==0.4.6
+matplotlib==3.8.4
+nltk==3.9.1
+numpy==1.21.6
+peft==0.15.1
+prettytable==3.16.0
+scikit_learn==1.6.1
+scipy==1.15.3
+setuptools==49.3.0
+skipthoughts==0.0.1
+tensor_parallel==1.2.8
+tensorflow==2.19.0
+tensorflow_hub==0.16.1
+torch==2.5.1
+transformers==4.46.1
